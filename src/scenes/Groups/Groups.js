@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import {render} from 'react-dom';
+import faker from 'faker';
+import _ from 'lodash';
 import style from './style.css';
 import Auth from '../../modules/Auth.js';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
@@ -9,6 +11,8 @@ import TextField from 'material-ui/TextField';
 import Modal from '../../components/Modal/Modal.js';
 import BlockIcon from 'material-ui/svg-icons/content/block';
 import Cookies from 'universal-cookie';
+import groupsData from '../../data/groups.json';
+import usersData from '../../data/users.json';
 
 const cookie = new Cookies();
 
@@ -17,7 +21,7 @@ export default class Groups extends Component {
   constructor(props) {
     super(props);
       this.state = {
-        groups: [],
+        groups: groupsData,
         filterInput : '',
         open: false,
         isModalVisible: false,
@@ -25,49 +29,19 @@ export default class Groups extends Component {
          userImagesNum:null,
         alertMsg: null,
         showAlert: false,
+        currentUser: null
       };
-      this.getGroups = this.getGroups.bind(this);
       this.handleInputChange = this.handleInputChange.bind(this);
       this.handleToggleList = this.handleToggleList.bind(this);
       this.getNestedMembers = this.getNestedMembers.bind(this);
-      this.handleUserImagesNum = this.handleUserImagesNum.bind(this);
-      this.handleUserGroupsNum = this.handleUserGroupsNum.bind(this);
   }
 
-    componentWillMount() {
-  		Auth.requireAuth();
-  }
+
 
   componentDidMount() {
-  	 this.getGroups();
-  }
+    this.setState({userImagesNum:Math.floor(Math.random() * 10) + 1});
+    this.setState({userGroupsNum:Math.floor(Math.random() * 10) + 1});
 
- handleUserImagesNum(id){
-    function getImagesPromise(){
-      return fetch(`${api}images/user_id/${id}`)
-    .then(response => response.json())
-    .then(responseText =>{
-      return responseText.message.length;
-    }).catch(error => console.log(error));
-    }
-    getImagesPromise().then(response =>{
-      this.setState({userImagesNum:response});
-    });
-  }
-
-
-  handleUserGroupsNum(id){
-    function getGroupsPromise() {
-      return fetch(`${api}groups/user_id/${id}`)
-      .then(response => response.json())
-    .then(responseText =>{
-      console.dir('message: ' + responseText.message);
-      return responseText.message.length;
-    }).catch(error => console.log(error));
-    }
-    getGroupsPromise().then(response =>{
-      this.setState({userGroupsNum:response});
-    });
   }
 // toggle modal after click
   toggleModal(){
@@ -76,19 +50,14 @@ export default class Groups extends Component {
   }
 //  show modal with user details
   show(user){
-    this.setState({isModalVisible: true, currentUser: user, showAlert: false});
-    this.handleUserImagesNum(user._id);
-    this.handleUserGroupsNum(user._id);
+    this.setState({userGroupsNum:Math.floor(Math.random() * 10) + 1});
+    this.setState({userImagesNum:Math.floor(Math.random() * 10) + 1});
+    this.setState({isModalVisible: true, currentUser: user,   showAlert: false});
     // assign props to modal, name , class visible
   }
 
   // ban user
    banUser(user){
-    fetch(`${api}users/id/${user._id}/toggleban`,{
-      method: 'GET',
-        }).then(response => {
-      if(response.ok && !response.json().error){
-        this.setState({showAlert : true});
         let tempUser = this.state.currentUser;
         if (user.isBanned)
           {this.setState({alertMsg:user.name + ' is not banned anymore'});}
@@ -96,12 +65,6 @@ export default class Groups extends Component {
           {this.setState({alertMsg: user.name + ' is banned'});}
         tempUser.isBanned = !tempUser.isBanned;
         this.setState({currentUser: tempUser});
-    }
-      else
-      {console.log('err');}
-    }).catch((error) => {
-      console.error(error);
-    });
 
   }
 
@@ -109,13 +72,19 @@ export default class Groups extends Component {
   getNestedMembers(group,indexGroup){
   	return group.members.map((member,index) => {
           let isBanned = member.isBanned;
+          console.log('user: ' + JSON.stringify(user));
+          const user = {
+            name: faker.name.firstName(),
+            profile_image : faker.image.avatar()
+          };
+          // debugger;
   		  	return <ListItem
             key={indexGroup + index}
-            onTouchTap={this.show.bind(this,member)}
-            primaryText={member.name}
-            rightIcon={member.isBanned ? <BlockIcon/> : null}
+            onTouchTap={this.show.bind(this,user)}
+            primaryText={user.name}
+            rightIcon={user.isBanned ? <BlockIcon/> : null}
             hoverColor={isBanned ? '#FFCDD2' : null}
-            leftAvatar={<Avatar src={`${api}${member.profile_image}`}/>}
+            leftAvatar={<Avatar src={user.profile_image}/>}
                           open={this.state.open}
   		  	       />;
 
@@ -138,7 +107,7 @@ export default class Groups extends Component {
              return <ListItem
             key={index}
             primaryText={group.name}
-            leftAvatar={<Avatar src={`${api}${groupIcon}`}/>}
+            leftAvatar={<Avatar src={require('../../images/' + groupIcon)}/>}
             onNestedListToggle={this.handleToggleList}
             primaryTogglesNestedList
             nestedItems={this.getNestedMembers(group, index)}
@@ -148,7 +117,7 @@ export default class Groups extends Component {
 
         </List>
 
-         {this.state.isModalVisible ?
+         {this.state.isModalVisible && this.state.currentUser ?
           <Modal tabIndex="0" profile={this.state.currentUser.profile_image}
               user={this.state.currentUser}
               name={this.state.currentUser.name}
@@ -165,16 +134,6 @@ export default class Groups extends Component {
   }
 
 
-  getGroups(){
-       fetch(`${api}groups/all`)
-    .then(response => response.json())
-    .then(data => {
-      this.setState({groups:data.message});
-    }).catch(error =>{
-    	console.log('error', error);
-
-    });
-  }
 
   handleInputChange(e){
   	this.setState({filterInput: e.target.value});

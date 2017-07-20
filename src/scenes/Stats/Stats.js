@@ -5,6 +5,7 @@ import {PieTooltip} from 'react-d3-tooltip';
 import moment from 'moment';
 import {BarTooltip} from 'react-d3-tooltip';
 import imagesData from '../../data/images.json';
+import groupsData from '../../data/groups.json';
 var tempPieData = [];
 
 export default class Stats extends Component{
@@ -13,8 +14,7 @@ export default class Stats extends Component{
 		super(props);
 		this.state = {
 			images: imagesData,
-			groups: [],
-			groups: [],
+			groups: groupsData,
 			temp: '2016-12-30T13:47:13.525Z',
 			daysArr : ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
 			daysCounterArr :[0,0,0,0,0,0,0],
@@ -69,7 +69,7 @@ export default class Stats extends Component{
 		// .then(response => response.json())
 		// .then(data => {
 		// 	this.setState({groups: data.message});
-		// 	this.createGroupMembersPie();
+			this.createGroupMembersPie();
 		// })
 		// .catch(error=> {
 		// 	console.log(error);
@@ -199,8 +199,8 @@ export default class Stats extends Component{
 		let images = this.state.images;
 			// loop every image and add 1 to the day tag
 			for (var i = 0; i < images.length; i++) {
-				if(moment(images[i].date).isValid())
-					{this.state.daysCounterArr[moment(images[i].date).day()] ++;}
+				if(moment(images[i].date.$date).isValid())
+					{this.state.daysCounterArr[moment(images[i].date.$date).day()] ++;}
 			}
 
 			// loop each day in array and add to chart data the day's data

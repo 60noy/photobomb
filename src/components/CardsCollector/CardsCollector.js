@@ -4,7 +4,6 @@ import React, { Component } from 'react';
 import {render} from 'react-dom';
 import faker from 'faker';
 import Card from '../Card/Card.js';
-import variables from '../../utils/variables.js';
 import {usersData,groupsData,imagesData,tagsData} from '../../data/allData';
 import style from './style.css';
 import {Row} from 'react-bootstrap';
@@ -59,9 +58,10 @@ export default class CardsCollector extends Component{
 
  render(){
     return(
-    <div>
+    <div style={{display: 'flex', flexDirection: 'row'}}>
         {this.state.images.map((image,index) => {
-           return <Card key={index} title={image.title} image={faker.image.imageUrl()} deleteHandler={this.delete.bind(this,image)} showModal={this.show.bind(this,image.user_id)} authorName={image.user_id.name}> {image.title} </Card>;
+          const randomImage = faker.random.image();
+           return <Card key={index} title={image.title} image={randomImage} deleteHandler={this.delete.bind(this,image)} showModal={this.show.bind(this,image.user_id)} authorName={`${faker.name.firstName()} ${faker.name.lastName()}`}> {image.title} </Card>;
 
           // else if( index % 4 === 3 ){return <Card key={index} image={image.image_string} deleteHandler={this.delete.bind(this,image)} showModal={this.show.bind(this,image.user_id)}> {image.title} </Card> </Row>;
       })

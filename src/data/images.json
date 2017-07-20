@@ -1,1 +1,244 @@
-[{"_id":{"$oid":"58abd66f019c7e4b07ca6e2d"},"title":"Going to school ","upvotes":1,"isPublic":true,"image_string":"saved_images/all/58abd66f019c7e4b07ca6e2d.png","user_id":{"$oid":"58abd36a019c7e4b07ca6e27"},"user_upvoted":["58abd6aa019c7e4b07ca6e2e"],"tags":["School"],"shared_users":[],"date":{"$date":"2017-02-19T05:55:59.473Z"},"comments":[],"__v":1},{"_id":{"$oid":"58abd6e7019c7e4b07ca6e2f"},"title":"Me and my buds","upvotes":1,"isPublic":true,"image_string":"saved_images/all/58abd6e7019c7e4b07ca6e2f.png","user_id":{"$oid":"58abd6aa019c7e4b07ca6e2e"},"user_upvoted":["58ab5a6a019c7e4b07ca6e21"],"tags":["Friends"],"shared_users":[],"date":{"$date":"2017-02-24T05:57:59.159Z"},"comments":[],"__v":1},{"_id":{"$oid":"58abd754019c7e4b07ca6e33"},"title":"Beautiful","upvotes":2,"isPublic":true,"image_string":"saved_images/all/58abd754019c7e4b07ca6e33.png","user_id":{"$oid":"58abd6aa019c7e4b07ca6e2e"},"user_upvoted":["58abd7c8019c7e4b07ca6e38","58ab5a6a019c7e4b07ca6e21"],"tags":["Nature"],"shared_users":[],"date":{"$date":"2017-02-18T05:59:48.377Z"},"comments":[],"__v":8},{"_id":{"$oid":"58abd7ed019c7e4b07ca6e39"},"title":"My office","upvotes":0,"isPublic":true,"image_string":"saved_images/all/58abd7ed019c7e4b07ca6e39.png","user_id":{"$oid":"58abd7c8019c7e4b07ca6e38"},"user_upvoted":[],"tags":["Office","Work"],"shared_users":[],"date":{"$date":"2017-02-20T06:02:19.458Z"},"comments":[],"__v":2},{"_id":{"$oid":"58abd855019c7e4b07ca6e3f"},"group":{"$oid":"58abd821019c7e4b07ca6e3e"},"title":"What I saw yesterday","upvotes":1,"isPublic":false,"image_string":"saved_images/groups/58abd821019c7e4b07ca6e3e/58abd855019c7e4b07ca6e3f.png","user_id":{"$oid":"58abd7c8019c7e4b07ca6e38"},"user_upvoted":["58abd36a019c7e4b07ca6e27"],"tags":["Nature","Beautiful","View"],"shared_users":[],"date":{"$date":"2017-02-21T06:04:05.087Z"},"comments":[],"__v":1},{"_id":{"$oid":"58abda46019c7e4b07ca6e4c"},"title":"View","upvotes":1,"isPublic":true,"image_string":"saved_images/all/58abda46019c7e4b07ca6e4c.png","user_id":{"$oid":"58abd9bc019c7e4b07ca6e4b"},"user_upvoted":["58ab5a6a019c7e4b07ca6e21","58abd6aa019c7e4b07ca6e2e"],"tags":["View"],"shared_users":[],"date":{"$date":"2017-02-15T06:12:22.986Z"},"comments":[],"__v":4},{"_id":{"$oid":"58acaea6d2aad0cc2a8cfea0"},"title":"Beauty in nature","upvotes":1,"isPublic":true,"image_string":"saved_images/all/58acaea6d2aad0cc2a8cfea0.png","user_id":{"$oid":"58acae65d2aad0cc2a8cfe9f"},"user_upvoted":["58abd6aa019c7e4b07ca6e2e"],"tags":["Nature","View","Nice"],"shared_users":[],"date":{"$date":"2017-02-21T21:18:30.627Z"},"comments":[],"__v":7},{"_id":{"$oid":"58adc48e81f28f4c2ffd8f68"},"title":"Amazing","upvotes":2,"isPublic":true,"image_string":"saved_images/all/58adc48e81f28f4c2ffd8f68.png","user_id":{"$oid":"58adc31981f28f4c2ffd8f62"},"user_upvoted":["58c82e3747a1d6dd084e6a83","58abd6aa019c7e4b07ca6e2e"],"tags":["Amazing","Nice","Nature"],"shared_users":[],"date":{"$date":"2017-02-22T17:04:14.569Z"},"comments":[],"__v":13},{"_id":{"$oid":"58c1db6247a1d6dd084e6a5f"},"group":{"$oid":"58c1db3347a1d6dd084e6a5e"},"title":"My new car","upvotes":0,"isPublic":false,"image_string":"saved_images/groups/58c1db3347a1d6dd084e6a5e/58c1db6247a1d6dd084e6a5f.png","user_id":{"$oid":"58abd6aa019c7e4b07ca6e2e"},"user_upvoted":[],"tags":["car","new","vehicles"],"shared_users":[],"date":{"$date":"2017-03-09T22:46:58.454Z"},"comments":[],"__v":0},{"_id":{"$oid":"58d53081f18645ca5d848dd6"},"group":{"$oid":"58d53058f18645ca5d848dd5"},"title":"nature view","upvotes":1,"isPublic":false,"image_string":"saved_images/groups/58d53058f18645ca5d848dd5/58d53081f18645ca5d848dd6.png","user_id":{"$oid":"58ab5a6a019c7e4b07ca6e21"},"user_upvoted":["58ab5a6a019c7e4b07ca6e21"],"tags":["Nature","Beautiful","View"],"shared_users":[],"date":{"$date":"2017-03-24T14:43:13.985Z"},"comments":[],"__v":1},{"_id":{"$oid":"58d6aefdf18645ca5d848ddc"},"group":{"$oid":"58c6e33f47a1d6dd084e6a82"},"title":"My new car","upvotes":1,"isPublic":false,"image_string":"saved_images/groups/58c6e33f47a1d6dd084e6a82/58d6aefdf18645ca5d848ddc.png","user_id":{"$oid":"58ab5a6a019c7e4b07ca6e21"},"user_upvoted":["58ab5a6a019c7e4b07ca6e21"],"tags":["car","new"],"shared_users":[],"date":{"$date":"2017-03-25T17:55:09.894Z"},"comments":[],"__v":3},{"_id":{"$oid":"58f70677f18645ca5d848de5"},"group":{"$oid":"58abd821019c7e4b07ca6e3e"},"title":"Title","upvotes":1,"isPublic":false,"image_string":"saved_images/groups/58abd821019c7e4b07ca6e3e/58f70677f18645ca5d848de5.png","user_id":{"$oid":"58abd36a019c7e4b07ca6e27"},"user_upvoted":["58abd36a019c7e4b07ca6e27"],"tags":["tag"],"shared_users":[],"date":{"$date":"2017-04-19T06:40:55.106Z"},"comments":[],"__v":1}]
+[{
+    "_id": {
+        "$oid": "58abd66f019c7e4b07ca6e2d"
+    },
+    "title": "Going to school ",
+    "upvotes": 1,
+    "isPublic": true,
+    "image_string": "saved_images/all/58abd66f019c7e4b07ca6e2d.png",
+    "user_id": {
+        "$oid": "58abd36a019c7e4b07ca6e27"
+    },
+    "user_upvoted": ["58abd6aa019c7e4b07ca6e2e"],
+    "tags": ["School"],
+    "shared_users": [],
+    "date": {
+        "$date": "2017-02-19T05:55:59.473Z"
+    },
+    "comments": [],
+    "__v": 1
+}, {
+    "_id": {
+        "$oid": "58abd6e7019c7e4b07ca6e2f"
+    },
+    "title": "Me and my buds",
+    "upvotes": 1,
+    "isPublic": true,
+    "image_string": "saved_images/all/58abd6e7019c7e4b07ca6e2f.png",
+    "user_id": {
+        "$oid": "58abd6aa019c7e4b07ca6e2e"
+    },
+    "user_upvoted": ["58ab5a6a019c7e4b07ca6e21"],
+    "tags": ["Friends"],
+    "shared_users": [],
+    "date": {
+        "$date": "2017-02-24T05:57:59.159Z"
+    },
+    "comments": [],
+    "__v": 1
+}, {
+    "_id": {
+        "$oid": "58abd754019c7e4b07ca6e33"
+    },
+    "title": "Beautiful",
+    "upvotes": 2,
+    "isPublic": true,
+    "image_string": "saved_images/all/58abd754019c7e4b07ca6e33.png",
+    "user_id": {
+        "$oid": "58abd6aa019c7e4b07ca6e2e"
+    },
+    "user_upvoted": ["58abd7c8019c7e4b07ca6e38", "58ab5a6a019c7e4b07ca6e21"],
+    "tags": ["Nature"],
+    "shared_users": [],
+    "date": {
+        "$date": "2017-02-18T05:59:48.377Z"
+    },
+    "comments": [],
+    "__v": 8
+}, {
+    "_id": {
+        "$oid": "58abd7ed019c7e4b07ca6e39"
+    },
+    "title": "My office",
+    "upvotes": 0,
+    "isPublic": true,
+    "image_string": "saved_images/all/58abd7ed019c7e4b07ca6e39.png",
+    "user_id": {
+        "$oid": "58abd7c8019c7e4b07ca6e38"
+    },
+    "user_upvoted": [],
+    "tags": ["Office", "Work"],
+    "shared_users": [],
+    "date": {
+        "$date": "2017-02-20T06:02:19.458Z"
+    },
+    "comments": [],
+    "__v": 2
+}, {
+    "_id": {
+        "$oid": "58abd855019c7e4b07ca6e3f"
+    },
+    "group": {
+        "$oid": "58abd821019c7e4b07ca6e3e"
+    },
+    "title": "What I saw yesterday",
+    "upvotes": 1,
+    "isPublic": false,
+    "image_string": "saved_images/groups/58abd821019c7e4b07ca6e3e/58abd855019c7e4b07ca6e3f.png",
+    "user_id": {
+        "$oid": "58abd7c8019c7e4b07ca6e38"
+    },
+    "user_upvoted": ["58abd36a019c7e4b07ca6e27"],
+    "tags": ["Nature", "Beautiful", "View"],
+    "shared_users": [],
+    "date": {
+        "$date": "2017-02-21T06:04:05.087Z"
+    },
+    "comments": [],
+    "__v": 1
+}, {
+    "_id": {
+        "$oid": "58abda46019c7e4b07ca6e4c"
+    },
+    "title": "View",
+    "upvotes": 1,
+    "isPublic": true,
+    "image_string": "saved_images/all/58abda46019c7e4b07ca6e4c.png",
+    "user_id": {
+        "$oid": "58abd9bc019c7e4b07ca6e4b"
+    },
+    "user_upvoted": ["58ab5a6a019c7e4b07ca6e21", "58abd6aa019c7e4b07ca6e2e"],
+    "tags": ["View"],
+    "shared_users": [],
+    "date": {
+        "$date": "2017-02-15T06:12:22.986Z"
+    },
+    "comments": [],
+    "__v": 4
+}, {
+    "_id": {
+        "$oid": "58acaea6d2aad0cc2a8cfea0"
+    },
+    "title": "Beauty in nature",
+    "upvotes": 1,
+    "isPublic": true,
+    "image_string": "saved_images/all/58acaea6d2aad0cc2a8cfea0.png",
+    "user_id": {
+        "$oid": "58acae65d2aad0cc2a8cfe9f"
+    },
+    "user_upvoted": ["58abd6aa019c7e4b07ca6e2e"],
+    "tags": ["Nature", "View", "Nice"],
+    "shared_users": [],
+    "date": {
+        "$date": "2017-02-21T21:18:30.627Z"
+    },
+    "comments": [],
+    "__v": 7
+}, {
+    "_id": {
+        "$oid": "58adc48e81f28f4c2ffd8f68"
+    },
+    "title": "Amazing",
+    "upvotes": 2,
+    "isPublic": true,
+    "image_string": "saved_images/all/58adc48e81f28f4c2ffd8f68.png",
+    "user_id": {
+        "$oid": "58adc31981f28f4c2ffd8f62"
+    },
+    "user_upvoted": ["58c82e3747a1d6dd084e6a83", "58abd6aa019c7e4b07ca6e2e"],
+    "tags": ["Amazing", "Nice", "Nature"],
+    "shared_users": [],
+    "date": {
+        "$date": "2017-02-23T17:04:14.569Z"
+    },
+    "comments": [],
+    "__v": 13
+}, {
+    "_id": {
+        "$oid": "58c1db6247a1d6dd084e6a5f"
+    },
+    "group": {
+        "$oid": "58c1db3347a1d6dd084e6a5e"
+    },
+    "title": "My new car",
+    "upvotes": 0,
+    "isPublic": false,
+    "image_string": "saved_images/groups/58c1db3347a1d6dd084e6a5e/58c1db6247a1d6dd084e6a5f.png",
+    "user_id": {
+        "$oid": "58abd6aa019c7e4b07ca6e2e"
+    },
+    "user_upvoted": [],
+    "tags": ["car", "new", "vehicles"],
+    "shared_users": [],
+    "date": {
+        "$date": "2017-03-09T22:46:58.454Z"
+    },
+    "comments": [],
+    "__v": 0
+}, {
+    "_id": {
+        "$oid": "58d53081f18645ca5d848dd6"
+    },
+    "group": {
+        "$oid": "58d53058f18645ca5d848dd5"
+    },
+    "title": "nature view",
+    "upvotes": 1,
+    "isPublic": false,
+    "image_string": "saved_images/groups/58d53058f18645ca5d848dd5/58d53081f18645ca5d848dd6.png",
+    "user_id": {
+        "$oid": "58ab5a6a019c7e4b07ca6e21"
+    },
+    "user_upvoted": ["58ab5a6a019c7e4b07ca6e21"],
+    "tags": ["Nature", "Beautiful", "View"],
+    "shared_users": [],
+    "date": {
+        "$date": "2017-03-24T14:43:13.985Z"
+    },
+    "comments": [],
+    "__v": 1
+}, {
+    "_id": {
+        "$oid": "58d6aefdf18645ca5d848ddc"
+    },
+    "group": {
+        "$oid": "58c6e33f47a1d6dd084e6a82"
+    },
+    "title": "My new car",
+    "upvotes": 1,
+    "isPublic": false,
+    "image_string": "saved_images/groups/58c6e33f47a1d6dd084e6a82/58d6aefdf18645ca5d848ddc.png",
+    "user_id": {
+        "$oid": "58ab5a6a019c7e4b07ca6e21"
+    },
+    "user_upvoted": ["58ab5a6a019c7e4b07ca6e21"],
+    "tags": ["car", "new"],
+    "shared_users": [],
+    "date": {
+        "$date": "2017-03-25T17:55:09.894Z"
+    },
+    "comments": [],
+    "__v": 3
+}, {
+    "_id": {
+        "$oid": "58f70677f18645ca5d848de5"
+    },
+    "group": {
+        "$oid": "58abd821019c7e4b07ca6e3e"
+    },
+    "title": "Title",
+    "upvotes": 1,
+    "isPublic": false,
+    "image_string": "saved_images/groups/58abd821019c7e4b07ca6e3e/58f70677f18645ca5d848de5.png",
+    "user_id": {
+        "$oid": "58abd36a019c7e4b07ca6e27"
+    },
+    "user_upvoted": ["58abd36a019c7e4b07ca6e27"],
+    "tags": ["tag"],
+    "shared_users": [],
+    "date": {
+        "$date": "2017-04-19T06:40:55.106Z"
+    },
+    "comments": [],
+    "__v": 1
+}]

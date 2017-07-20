@@ -9,6 +9,7 @@ import Auth from '../../modules/Auth.js';
 import Modal from '../../components/Modal/Modal.js';
 import Toggle from 'material-ui/Toggle';
 import BlockIcon from 'material-ui/svg-icons/content/block';
+import usersData from '../../data/users.json';
 
 const toggleStyles = {
   block: {
@@ -35,7 +36,7 @@ export default class Users extends Component{
 	constructor(props) {
 		super(props);
 		this.state = {
-			users: [],
+			users: usersData,
 			filterInput: '',
 			currentUser: null,
 			userGroupsNum: null,
@@ -46,7 +47,6 @@ export default class Users extends Component{
       isToggled : false
 
 		};
-		this.getUsers = this.getUsers.bind(this);
 		this.handleInputChange = this.handleInputChange.bind(this);
     this.handleToggle = this.handleToggle.bind(this);
 	}
@@ -55,51 +55,18 @@ export default class Users extends Component{
     this.setState({isToggled : isToggled});
   }
 
-	getUsers(){
-		fetch(`${api}users`)
-		.then(response => response.json())
-		.then(data => {
-			this.setState({users: data.message});
-		})
-		.catch(error =>{
-			console.log('error', error);});
-	}
-
-	componentWillMount() {
-		Auth.requireAuth();
-		this.getUsers();
-	}
 
 	handleInputChange(e){
 		this.setState({filterInput: e.target.value});
 	}
 
- handleUserImagesNum(id){
-    function getImagesPromise(){
-      return fetch(`${api}images/user_id/${id}`)
-    .then(response => response.json())
-    .then(responseText =>{
-      return responseText.message.length;
-    }).catch(error => console.log(error));
-    }
-    getImagesPromise().then(response =>{
-      this.setState({userImagesNum:response});
-    });
+ handleUserImagesNum(){
+    this.setState({userImagesNum:Math.floor(Math.random() * 10) + 1});
   }
 
 
-  handleUserGroupsNum(id){
-    function getGroupsPromise() {
-      return fetch(`${api}groups/user_id/${id}`)
-      .then(response => response.json())
-    .then(responseText =>{
-      console.dir('message: ' + responseText.message);
-      return responseText.message.length;
-    }).catch(error => console.log(error));
-    }
-    getGroupsPromise().then(response =>{
-      this.setState({userGroupsNum:response});
-    });
+  handleUserGroupsNum(){
+      this.setState({userGroupsNum:Math.floor(Math.random() * 10) + 1});
   }
 // toggle modal after click
   toggleModal(){
@@ -109,32 +76,20 @@ export default class Users extends Component{
 //  show modal with user details
   show(user){
     this.setState({isModalVisible: true, currentUser: user, showAlert: false});
-    this.handleUserImagesNum(user._id);
-    this.handleUserGroupsNum(user._id);
+    this.handleUserImagesNum();
+    this.handleUserGroupsNum();
     // assign props to modal, name , class visible
   }
 
   // ban user
   banUser(user){
-    fetch(`${api}users/id/${user._id}/toggleban`,{
-      method: 'GET',
-        }).then(response => {
-      if(response.ok && !response.json().error){
-        this.setState({showAlert : true});
-        let tempUser = this.state.currentUser;
+    const tempUser = user;
         if (user.isBanned)
           {this.setState({alertMsg:user.name + ' is not banned anymore'});}
         else
           {this.setState({alertMsg: user.name + ' is banned'});}
         tempUser.isBanned = !tempUser.isBanned;
         this.setState({currentUser: tempUser});
-    }
-      else
-      {console.log('err');}
-    }).catch((error) => {
-      console.error(error);
-    });
-
   }
 
 
@@ -169,7 +124,7 @@ export default class Users extends Component{
             onTouchTap={this.show.bind(this,user)}
             hoverColor={isBanned ? '#FFCDD2' : null}
             rightIcon={isBanned ? <BlockIcon/> : null}
-            leftAvatar={<Avatar src={`${api}${userIcon}`}/>}
+            leftAvatar={<Avatar src={require('../../images/' + userIcon)}/>}
                         />);
               }
               else
@@ -182,7 +137,7 @@ export default class Users extends Component{
                hoverColor={isBanned ? '#FFCDD2' : null}
                rightIcon={isBanned ? <BlockIcon/> : null}
                onTouchTap={this.show.bind(this,user)}
-               leftAvatar={<Avatar src={`${api}${userIcon}`}/>}
+               leftAvatar={<Avatar src={require('../../images/' + userIcon)}/>}
                      />);
 
             }
@@ -191,7 +146,7 @@ export default class Users extends Component{
 
 				</List>
 				 {this.state.isModalVisible ?
-       <Modal tabIndex="0" profile={this.state.currentUser.profile_image}
+       <Modal tabIndex="0" profile={require('../../images/' + this.state.currentUser.profile_image)}
         user={this.state.currentUser}
         name={this.state.currentUser.name}
         isBanned={this.state.currentUser.isBanned}
