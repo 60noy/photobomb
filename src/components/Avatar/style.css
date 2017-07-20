@@ -1,0 +1,17 @@
+.wrapper{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.user_icon{
+	/*composes: round_center from '../../shared/styles.css';*/
+	width: 128px;
+	height: 128px;
+	vertical-align: center;
+}
+.user_text{
+	margin-top: 1em;
+	font-weight: bold;
+	font-size: 2em;
+	vertical-align: center;
+}

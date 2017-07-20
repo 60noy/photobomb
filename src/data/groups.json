@@ -1,0 +1,248 @@
+[{
+    "_id": {
+        "$oid": "58abd821019c7e4b07ca6e3e"
+    },
+    "icon": "saved_images/groups/58abd821019c7e4b07ca6e3e/icon.jpg",
+    "admin": {
+        "$oid": "58abd7c8019c7e4b07ca6e38"
+    },
+    "name": "Friends",
+    "created_date": {
+        "$date": "2017-02-21T06:03:13.220Z"
+    },
+    "images_id": [{
+        "$oid": "58abd855019c7e4b07ca6e3f"
+    }, {
+        "$oid": "58f70677f18645ca5d848de5"
+    }, {
+        "$oid": "58f86a00f18645ca5d848de9"
+    }],
+    "members": [{
+        "$oid": "58abd7c8019c7e4b07ca6e38"
+    }, {
+        "$oid": "58abd6aa019c7e4b07ca6e2e"
+    }, {
+        "$oid": "58abd36a019c7e4b07ca6e27"
+    }, {
+        "$oid": "58ab5a6a019c7e4b07ca6e21"
+    }],
+    "__v": 3
+}, {
+    "_id": {
+        "$oid": "58abd8b7019c7e4b07ca6e45"
+    },
+    "icon": "saved_images/groups/58abd8b7019c7e4b07ca6e45/icon.jpg",
+    "admin": {
+        "$oid": "58abd7c8019c7e4b07ca6e38"
+    },
+    "name": "Guitar",
+    "created_date": {
+        "$date": "2017-02-21T06:05:43.673Z"
+    },
+    "images_id": [],
+    "members": [{
+        "$oid": "58abd7c8019c7e4b07ca6e38"
+    }, {
+        "$oid": "58abd6aa019c7e4b07ca6e2e"
+    }, {
+        "$oid": "58ab5a6a019c7e4b07ca6e21"
+    }],
+    "__v": 0
+}, {
+    "_id": {
+        "$oid": "58adc3cc81f28f4c2ffd8f66"
+    },
+    "icon": "saved_images/groups/58adc3cc81f28f4c2ffd8f66/icon.jpg",
+    "admin": {
+        "$oid": "58adc31981f28f4c2ffd8f62"
+    },
+    "name": "Flowers",
+    "created_date": {
+        "$date": "2017-02-22T17:01:00.886Z"
+    },
+    "images_id": [],
+    "members": [{
+        "$oid": "58adc31981f28f4c2ffd8f62"
+    }, {
+        "$oid": "58abd7c8019c7e4b07ca6e38"
+    }, {
+        "$oid": "58adc31981f28f4c2ffd8f62"
+    }, {
+        "$oid": "58abd36a019c7e4b07ca6e27"
+    }, {
+        "$oid": "58abd995019c7e4b07ca6e4a"
+    }, {
+        "$oid": "58acb648d2aad0cc2a8cfea9"
+    }],
+    "__v": 0
+}, {
+    "_id": {
+        "$oid": "58adc63b81f28f4c2ffd8f6f"
+    },
+    "icon": "saved_images/groups/58adc63b81f28f4c2ffd8f6f/icon.jpg",
+    "admin": {
+        "$oid": "58acb897d2aad0cc2a8cfeaf"
+    },
+    "name": "Bros",
+    "created_date": {
+        "$date": "2017-02-22T17:11:23.044Z"
+    },
+    "images_id": [{
+        "$oid": "58d6aeccf18645ca5d848dd9"
+    }],
+    "members": [{
+        "$oid": "58acb897d2aad0cc2a8cfeaf"
+    }, {
+        "$oid": "58abd6aa019c7e4b07ca6e2e"
+    }, {
+        "$oid": "58acb872d2aad0cc2a8cfeae"
+    }, {
+        "$oid": "58adc31981f28f4c2ffd8f62"
+    }, {
+        "$oid": "58abd36a019c7e4b07ca6e27"
+    }, {
+        "$oid": "58acaed5d2aad0cc2a8cfea5"
+    }, {
+        "$oid": "58ad6c9281f28f4c2ffd8f61"
+    }, {
+        "$oid": "58ab5a6a019c7e4b07ca6e21"
+    }, {
+        "$oid": "58acae65d2aad0cc2a8cfe9f"
+    }, {
+        "$oid": "58acb5e1d2aad0cc2a8cfea7"
+    }, {
+        "$oid": "58acb6ecd2aad0cc2a8cfeac"
+    }, {
+        "$oid": "58abd9bc019c7e4b07ca6e4b"
+    }, {
+        "$oid": "58acb872d2aad0cc2a8cfeae"
+    }, {
+        "$oid": "58abd6aa019c7e4b07ca6e2e"
+    }, {
+        "$oid": "58acb872d2aad0cc2a8cfeae"
+    }, {
+        "$oid": "58acb897d2aad0cc2a8cfeaf"
+    }, {
+        "$oid": "58acb8c0d2aad0cc2a8cfeb0"
+    }, {
+        "$oid": "58acaf2ed2aad0cc2a8cfea6"
+    }, {
+        "$oid": "58abd7c8019c7e4b07ca6e38"
+    }, {
+        "$oid": "58acb69dd2aad0cc2a8cfeab"
+    }],
+    "__v": 1
+}, {
+    "_id": {
+        "$oid": "58c6e33f47a1d6dd084e6a82"
+    },
+    "icon": "saved_images/groups/58c6e33f47a1d6dd084e6a82/icon.jpg",
+    "admin": {
+        "$oid": "58ab5a6a019c7e4b07ca6e21"
+    },
+    "name": "Cars",
+    "created_date": {
+        "$date": "2017-03-13T18:21:51.414Z"
+    },
+    "images_id": [{
+        "$oid": "58d6aefdf18645ca5d848ddc"
+    }],
+    "members": [{
+        "$oid": "58ab5a6a019c7e4b07ca6e21"
+    }, {
+        "$oid": "58abd7c8019c7e4b07ca6e38"
+    }, {
+        "$oid": "58acaf2ed2aad0cc2a8cfea6"
+    }, {
+        "$oid": "58abd6aa019c7e4b07ca6e2e"
+    }, {
+        "$oid": "58acb872d2aad0cc2a8cfeae"
+    }, {
+        "$oid": "58adc31981f28f4c2ffd8f62"
+    }, {
+        "$oid": "58abd36a019c7e4b07ca6e27"
+    }, {
+        "$oid": "58acaed5d2aad0cc2a8cfea5"
+    }, {
+        "$oid": "58ad6c9281f28f4c2ffd8f61"
+    }, {
+        "$oid": "58acae65d2aad0cc2a8cfe9f"
+    }, {
+        "$oid": "58abd995019c7e4b07ca6e4a"
+    }, {
+        "$oid": "58acb5e1d2aad0cc2a8cfea7"
+    }, {
+        "$oid": "58acb69dd2aad0cc2a8cfeab"
+    }, {
+        "$oid": "58acb615d2aad0cc2a8cfea8"
+    }, {
+        "$oid": "58acb648d2aad0cc2a8cfea9"
+    }, {
+        "$oid": "58acb6ecd2aad0cc2a8cfeac"
+    }],
+    "__v": 1
+}, {
+    "_id": {
+        "$oid": "58d2735b3d09ba326dab7541"
+    },
+    "icon": "saved_images/groups/58d2735b3d09ba326dab7541/icon.jpg",
+    "admin": {
+        "$oid": "58ab5a6a019c7e4b07ca6e21"
+    },
+    "name": "Surfing",
+    "created_date": {
+        "$date": "2017-03-22T12:51:39.870Z"
+    },
+    "images_id": [],
+    "members": [{
+        "$oid": "58ab5a6a019c7e4b07ca6e21"
+    }, {
+        "$oid": "58abd7c8019c7e4b07ca6e38"
+    }, {
+        "$oid": "58adc31981f28f4c2ffd8f62"
+    }, {
+        "$oid": "58acb872d2aad0cc2a8cfeae"
+    }, {
+        "$oid": "58acb648d2aad0cc2a8cfea9"
+    }, {
+        "$oid": "58acb6ecd2aad0cc2a8cfeac"
+    }, {
+        "$oid": "58abd9bc019c7e4b07ca6e4b"
+    }, {
+        "$oid": "58acb615d2aad0cc2a8cfea8"
+    }, {
+        "$oid": "58acaed5d2aad0cc2a8cfea5"
+    }],
+    "__v": 0
+}, {
+    "_id": {
+        "$oid": "58d53058f18645ca5d848dd5"
+    },
+    "icon": "saved_images/groups/58d53058f18645ca5d848dd5/icon.jpg",
+    "admin": {
+        "$oid": "58ab5a6a019c7e4b07ca6e21"
+    },
+    "name": "Nature Lovers",
+    "created_date": {
+        "$date": "2017-03-24T14:42:32.363Z"
+    },
+    "images_id": [{
+        "$oid": "58d53081f18645ca5d848dd6"
+    }],
+    "members": [{
+        "$oid": "58ab5a6a019c7e4b07ca6e21"
+    }, {
+        "$oid": "58acaf2ed2aad0cc2a8cfea6"
+    }, {
+        "$oid": "58d52ec78f4b6d8e7912142d"
+    }, {
+        "$oid": "58acaed5d2aad0cc2a8cfea5"
+    }, {
+        "$oid": "58adc31981f28f4c2ffd8f62"
+    }, {
+        "$oid": "58acb5e1d2aad0cc2a8cfea7"
+    }, {
+        "$oid": "58abd9bc019c7e4b07ca6e4b"
+    }],
+    "__v": 1
+}]
