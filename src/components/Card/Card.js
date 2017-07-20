@@ -3,6 +3,8 @@ import {render} from 'react-dom';
 import Image from '../Image/Image.js';
 import style from './style.css';
 import design from '../../utils/design.js';
+import {Card as mCard, CardMedia,CardHeader,CardActions,CardTitle} from 'material-ui/Card';
+import FlatButton from 'material-ui/FlatButton';
 const{primary_color,material_red,secondary_color} = design;
 // import deleteImage from '../../images/ic_delete';
 // import userImage from '../../images/ic_user';
@@ -12,18 +14,22 @@ export default class Card extends Component{
     super(props);
   }
 
-
+  shouldComponentUpdate(){
+    return false;
+  }
     render() {
       return (
         <div className={style.container}>
-          <Image imageSrc={this.props.image}/>
-          <div className={style.bottomBar}>
-            <div className={style.bottomText}>
-            <div className={style.title}> {this.props.title} </div>
-            By <span className={style.author} onClick={this.props.showModal}>{this.props.authorName} </span>
-            </div>
-            <button onClick={this.props.deleteHandler} className={style.btnDelete}/>
-          </div>
+          <mCard style={{}}>
+            <CardMedia
+               overlay={<CardTitle title={this.props.title} subtitle={this.props.authorName} onClick={this.props.showModal} />}
+            >
+               <img src={this.props.image} alt="media_img" />
+             </CardMedia>
+          <CardActions>
+            <FlatButton onClick={this.props.deleteHandler} label="delete"/>
+          </CardActions>
+        </mCard>
         </div>
       );
     }

@@ -1,14 +1,11 @@
 .container{
 	/*composes: card-dimens from '../../shared/styles.css';*/
 	margin-bottom: 4%;
-	position: relative;
+	margin-right: 5%;
 	/*material design card shadow effect*/
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-	color: #fff;
-	font-size: 1.2em;
-	width: 400px;
-	flex: 1;
+	height: 100%;
 }
 
 .container:hover{

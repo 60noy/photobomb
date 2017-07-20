@@ -8,6 +8,7 @@ import {usersData,groupsData,imagesData,tagsData} from '../../data/allData';
 import style from './style.css';
 import {Row} from 'react-bootstrap';
 import Modal from '../Modal/Modal.js';
+import shortid from 'shortid';
 
 // holder of all the cards
 export default class CardsCollector extends Component{
@@ -26,6 +27,7 @@ export default class CardsCollector extends Component{
     };
 
   }
+
   delete(item){
     let newState = this.state.images;
     newState.splice(newState.indexOf(item),1);
@@ -58,10 +60,16 @@ export default class CardsCollector extends Component{
 
  render(){
     return(
-    <div style={{display: 'flex', flexDirection: 'row'}}>
+    <div style={{	display: 'flex',
+      flexDirection: 'row', display: 'flex', flexWrap: 'wrap', alignItems:'flex-start'}}
+    >
         {this.state.images.map((image,index) => {
           const randomImage = faker.random.image();
-           return <Card key={index} title={image.title} image={randomImage} deleteHandler={this.delete.bind(this,image)} showModal={this.show.bind(this,image.user_id)} authorName={`${faker.name.firstName()} ${faker.name.lastName()}`}> {image.title} </Card>;
+           return (
+             <div style={{width: '30%'}}>
+               <Card key={shortid.generate()} title={image.title} image={randomImage} deleteHandler={this.delete.bind(this,image)} showModal={this.show.bind(this,image.user_id)} authorName={`${faker.name.firstName()} ${faker.name.lastName()}`}> {image.title} </Card>
+             </div>
+           );
 
           // else if( index % 4 === 3 ){return <Card key={index} image={image.image_string} deleteHandler={this.delete.bind(this,image)} showModal={this.show.bind(this,image.user_id)}> {image.title} </Card> </Row>;
       })
